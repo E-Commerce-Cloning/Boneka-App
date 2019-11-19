@@ -1,0 +1,62 @@
+.sign1{  margin-left:-84px !important;
+    margin-top: 40px !important;
+      font-size: 20px;
+   text-align: center;
+        }
+  .account2{
+    margin-top :85px !important;
+    font-size: 12px !important;
+   margin-left: -70px !important;
+    text-align: center;
+  }
+   #formBasic{
+     height: 35px;
+     
+   }
+   .min{
+     margin-top: -20px !important
+   }
+   .img1{ margin-left : 40px !important;
+     box-shadow: dimgrey !important;
+     opacity: 100px !important;
+   }
+   
+   .navbar1{ 
+   
+     
+       background-color: #092c52;
+       border-top: 1px solid #071d3c;
+      
+   
+   }
+   .Card1{ width: 360px;
+    background-color:	#F5F5F5 !important;
+ }
+ 
+ 
+ .Submit1{
+     width: 320px;
+ }
+ .container1{
+     top: 550px ;
+     left : 50%;
+     position: absolute;
+     transform: translate(-50%,-50%);
+ }
+ .Form.Control{
+   height:40px !important;
+ }
+ .user{
+  height:40px !important;
+
+ }
+ .account1{
+   font-size: 13px !important;
+  margin-left: -88px !important;
+   text-align: center;
+ }
+ .PhoneInput{
+   place-content: 20px;
+stroke-width: 20px !important;
+   content: inherit;
+ }
