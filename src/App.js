@@ -1,18 +1,14 @@
-import React, { Fragment } from "react";
+import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-//import Navbar from "./components/Navbar/Navbar";
-import Carousel from "./components/Carousel/CarouselIklan";
-import CardCarousel from "./components/Card/Card";
-import Navbar from "./components/NavbarAfterLogin/Navbar";
+// import Dashboard from "./pages/Dashboard";
+import DashboardAfterLogin from "./pages/Dashboard After Log";
+//import ChartEmpty from "./pages/ChartEmpty";
 
-function App() {
+const App = () => {
   return (
-    <Fragment>
-      <Navbar />
-      <Carousel />
-      <CardCarousel />
-    </Fragment>
+    <DashboardAfterLogin />
+    // <Dashboard />
   );
-}
+};
 export default App;
