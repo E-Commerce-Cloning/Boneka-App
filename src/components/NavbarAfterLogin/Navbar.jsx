@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Nav, Button, FormControl } from "react-bootstrap";
+import { Navbar, Nav, Button, FormControl, Dropdown } from "react-bootstrap";
 import "./Navbar.css";
 import logo from "../../assets/img/Boneka.png";
 import iconMenu from "../../assets/img/menu-button.svg";
@@ -71,7 +71,7 @@ const NavDB = () => {
           <p style={{ fontSize: "12px", paddingTop: "10px" }}>Keranjang</p>
         </Button>
 
-        <Nav.Link
+        <Dropdown
           href="#"
           style={{
             marginLeft: "6px",
@@ -81,12 +81,20 @@ const NavDB = () => {
             color: "white"
           }}
         >
-          <p style={{ marginTop: "10px", fontSize: "15px" }}>
+          <Dropdown.Toggle
+            className="dropdown"
+            style={{ marginTop: "10px", fontSize: "15px" }}
+          >
             Halo,
             <br />
             Hasnawi
-          </p>
-        </Nav.Link>
+          </Dropdown.Toggle>
+          <Dropdown.Menu>
+            <Dropdown.Item href="#/action-1">Akun Saya</Dropdown.Item>
+            <Dropdown.Item href="#/action-2">Riwayat Transaksi</Dropdown.Item>
+            <Dropdown.Item href="#/action-3">Keluar</Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown>
       </Navbar>
       <div className="garis"></div>
       <Navbar className="nav2">
