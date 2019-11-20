@@ -6,12 +6,15 @@
 .footerCard1{
     height: 120px !important;
 }
-.Carddash{
+.Cardmenu{
     margin-left: -40px !important;
 }
 
-
-
+.fl{
+   color:black;
+   text-decoration: none; 
+   background-color: none;
+}
 .logout{
     color: blue;
 }
@@ -25,16 +28,4 @@
 
 }
 .line{
-    width: 530px !important
-}
-.list-group-item{
-    width: 358px;;
-    height: 43px;
-}
-.wajib{
-    font-size: 8px !important;
-    color: grey;
-}
-.line{
- width: 530px !important
-}
+    width: 530px !important}

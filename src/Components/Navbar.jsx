@@ -32,12 +32,12 @@ const NavDB = () => {
           aria-describedby="basic-addon1"
           style = {{background:'white'}}
         />
-        <Button className="search-logo" variant="outline-light"
+        <Button className="search-logo" variant="light"
           style={{
             borderRadius: "3px",
             marginBottom: "15px",
             marginLeft: "-45px",
-            // backgroundColor: "white",
+            backgroundColor: "white", 
             boxShadow: '0',
        
           }}

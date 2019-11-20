@@ -27,6 +27,8 @@ class Register extends Component {
       hidden: true,
       hidden1: true,
       password: "",
+      color:'',
+      colorc: '',
       confpassword: "",
       startDate: new Date()
     };
@@ -59,10 +61,12 @@ class Register extends Component {
   }
   toggleShow1() {
     this.setState({ hidden1: !this.state.hidden1 });
+    this.setState({colorc:"red"})
   }
 
   toggleShow() {
     this.setState({ hidden: !this.state.hidden });
+    this.setState({color:"red"})
   }
 
   componentDidMount() {
@@ -78,12 +82,12 @@ class Register extends Component {
     return (
       <div>
         <Navbar className="navbar1">
-          <a href="#">
+          <a href="#!">
             <img
               clasName="logo1 btn"
               style={{ width: "34px", marginLeft: "80px" }}
               src="logo.png"
-              alt="my image"
+              alt="my logo"
               onClick={() => alert("Hello")}
             />
           </a>
@@ -102,13 +106,13 @@ class Register extends Component {
           <Row>
             <Col></Col>
             <Col xs={5}>
-              <Card className="Card1">
+              <Card className="Cardregis">
                 <Card.Header className="footerCard">
                   <div className="pic">
-                    <img className="picture" src={account} />
+                    <img className="picture" src={account} alt="acount" />
                   </div>
                 </Card.Header>
-                <Card.Body className="bodycard" style={{ color: "grey" }}>
+                <Card.Body className="bodycard">
                   <Form>
                     <Form.Group as={Col} controlId="formGridState">
                       <Form.Label>Gender</Form.Label>
@@ -124,7 +128,6 @@ class Register extends Component {
                       <Form.Label>Nama Depan</Form.Label>
                       <Form.Control
                         className="control"
-                    
                         type="form"
                         placeholder="Masukkan Nama Depan"
                       />
@@ -134,7 +137,6 @@ class Register extends Component {
                       <Form.Label>Nama Belakang</Form.Label>
                       <Form.Control
                         className="control"
-                       
                         type="form"
                         placeholder="Masukkan Nama Belakang"
                       />
@@ -159,22 +161,21 @@ class Register extends Component {
                       <Form.Label>Tanggal Lahir </Form.Label>
                       <Form.Control
                         className="control"
-                        
                         placeholder="Tanggal lahir"
                         type="date"
                       />
                       <Form.Text className="text-muted"></Form.Text>
                     </Form.Group>
-                   
-                    <PhoneInput className= "phoneinput"
-                     type = "form"
+
+                    <PhoneInput
+                      className="phoneinput"
+                      type="form"
                       onChange={value => this.setState({ value })}
                     />
                     <Form.Group controlId="formBasic">
                       <Form.Label>Email</Form.Label>
                       <Form.Control
                         className="control"
-                       
                         type="form"
                         placeholder="Masukkan  Email"
                       />
@@ -192,7 +193,7 @@ class Register extends Component {
                       />
                       <icon
                         className="fa fa-eye "
-                        style={{ marginBottom: "-100px" }}
+                        style={{ marginBottom: "-100px" , color :this.state.color}}
                         onClick={this.toggleShow}
                       />
                       <p className="min">minimum 6 karakter alfanumerik</p>
@@ -216,7 +217,7 @@ class Register extends Component {
                       />
                       <icon
                         className="fa fa-eye "
-                        style={{ marginBottom: "-100px" }}
+                        style={{ marginBottom: "-100px",color :this.state.colorc }}
                         onClick={this.toggleShow1}
                       />
                     </Form.Group>
@@ -240,7 +241,7 @@ class Register extends Component {
                   </Form>
                 </Card.Body>
               </Card>
-              <p className="account1" >  
+              <p className="registrasi">
                 Dengan Mengeklik tombol "REGISTRASI AKUN" anda setuju <br />
                 dengan
                 <a className="daftar" href="url">

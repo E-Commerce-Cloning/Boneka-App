@@ -1,17 +1,15 @@
 import React, { Component } from "react";
-import { Col, Row, Container, ListGroup, Card } from "react-bootstrap";
-import account1 from "../assets/img/acc.png";
+import { Col, Row, Container } from "react-bootstrap";
 import "./Dashboard.css";
-import { Link, Switch } from "react-router-dom";
-import NavDB from './Navbar'
+import NavDB from "./Navbar";
+import Menu from "./Menu";
 
 class Dashboard extends Component {
   componentDidMount() {}
   render() {
     return (
       <div>
-        
-        <NavDB/>
+        <NavDB />
         <div className="Container ">
           <div className="col-lg-12 bt-page-title text-center">
             <h1 className="bt-typo-displaylarge">Dashboard</h1>
@@ -24,6 +22,9 @@ class Dashboard extends Component {
         <Container>
           <Row>
             <Col>
+              <Menu />
+            </Col>
+            {/* <Col>
               <Card className="Card1">
                 <Card.Header className="footerCard1">
                   <div className="pic1">
@@ -62,13 +63,13 @@ class Dashboard extends Component {
                   </ListGroup.Item>
                 </ListGroup>
               </Card>
-            </Col>
+            </Col> */}
             <Col>
               <div className="col-md-8">
                 <div className="row">
                   <div className="col-md-6">
                     <h3 className="bt-typo-displaysmall bt-form-heading">
-                      Akses 
+                      Akses
                     </h3>
                     <div className="list-group">
                       <a className="list-group-item" href="/profile">
@@ -77,16 +78,22 @@ class Dashboard extends Component {
                       <a className="list-group-item" href="/member/address">
                         Alamat Pengiriman
                       </a>
-                      <a className="list-group-item "  href="/member/account">
+                      <a className="list-group-item " href="/member/account">
                         Ubah Kata Sandi
                       </a>
                     </div>
                   </div>
-                  <div className="col-md-6" style ={{left : "200px"}}>
+                  <div className="col-md-6" style={{ left: "200px" }}>
                     <h3 className="bt-typo-displaysmall bt-form-heading">
                       Pemesanan
                     </h3>
-                    <div className="list-group">
+                    <div className="list-group-item">
+                      Pemesanan Menunggu Pembayaran{" "}
+                      <span id="unpaidCount" className="badge --badge-error">
+                        0
+                      </span>
+                    </div>
+                    {/* <div className="list-group">
                       <div className="list-group-item" >
                         Pemesanan Menunggu Pembayaran{" "}
                         <span id="unpaidCount" className="badge --badge-error">
@@ -103,7 +110,7 @@ class Dashboard extends Component {
                         </span>
                       </a>{" "}
                      
-                    </div>
+                    </div> */}
                   </div>
                 </div>
                 <div className="row">
@@ -129,11 +136,7 @@ class Dashboard extends Component {
             </Col>
             <Col></Col>
           </Row>
-          <Row>
-            {/* <Col>1 of 3</Col>
-            <Col>2 of 3</Col>
-            <Col>3 of 3</Col> */}
-          </Row>
+          <Row></Row>
         </Container>
       </div>
     );

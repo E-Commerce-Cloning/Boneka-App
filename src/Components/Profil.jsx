@@ -1,29 +1,28 @@
 import React, { Component } from "react";
 import {
   Col,
-  
   Row,
   Container,
-  ListGroup,
-  Card,
   Form,
   ToggleButton,
-  InputGroup
+  InputGroup,
+  Button
 } from "react-bootstrap";
-import account1 from "../assets/img/acc.png";
-import "./Dashboard.css";
 import "./Profil.css";
-import { Link, Switch } from "react-router-dom";
 import ToggleButtonGroup from "react-bootstrap/ToggleButtonGroup";
 import NavDB from "./Navbar";
-
+import Menu from "./Menu";
 
 class Dashboard extends Component {
-  componentDidMount() {}
+  componentDidMount() {
+    
+  }
   render() {
     return (
       <div>
-        <div><NavDB /></div>
+        <div>
+          <NavDB />
+        </div>
         <div className="Container ">
           <div className="col-lg-12 bt-page-title text-center">
             <h1 className="bt-typo-displaylarge">Profil</h1>
@@ -32,10 +31,12 @@ class Dashboard extends Component {
         </div>
         <hr />
         <span></span>
-        <Container className = "container1">
-        <Row>
+        <Container className="container1">
+          <Row>
             <Col>
-              <Card className="Card1">
+              <Menu />
+
+              {/* <Card className="Card1">
                 <Card.Header className="footerCard1">
                   <div className="pic1">
                     <img className="picture1" src={account1} alt = "account" />
@@ -72,7 +73,7 @@ class Dashboard extends Component {
                     </a>
                   </ListGroup.Item>
                 </ListGroup>
-              </Card>
+              </Card> */}
             </Col>
             <Col>
               <p className="information">
@@ -85,11 +86,14 @@ class Dashboard extends Component {
                       Jenis Kelamin
                     </Form.Label>
                     <Col sm="10">
-                      <ToggleButtonGroup  type="checkbox" className = "toggle" >
+                      <ToggleButtonGroup type="checkbox" className="toggle">
                         {/* value={value} onChange={handleChange} */}
-                        <ToggleButton  variant="light" value="">Pria</ToggleButton>
-                        <ToggleButton  variant="light" value="">Wanita</ToggleButton>
-                        
+                        <ToggleButton variant="light" value="">
+                          Pria
+                        </ToggleButton>
+                        <ToggleButton variant="light" value="">
+                          Wanita
+                        </ToggleButton>
                       </ToggleButtonGroup>
                     </Col>
                   </Form.Group>
@@ -125,7 +129,7 @@ class Dashboard extends Component {
                 <Form>
                   <Form.Group as={Row} controlId="Name">
                     <Form.Label className="formlabel" column sm="2">
-                    Email
+                      Email
                     </Form.Label>
                     <Col sm="10">
                       <Form.Control
@@ -142,13 +146,19 @@ class Dashboard extends Component {
                       Ponsel
                     </Form.Label>
                     <Col sm="10">
-                    <InputGroup.Prepend>
-              <InputGroup.Text id="inputGroupPrepend" style = {{ marginBottom : "-40px", height: "36px"}}>+62</InputGroup.Text>
-            </InputGroup.Prepend>
+                      <InputGroup.Prepend>
+                        <InputGroup.Text
+                          id="inputGroupPrepend"
+                          style={{ marginBottom: "-40px", height: "36px" }}
+                        >
+                          +62
+                        </InputGroup.Text>
+                      </InputGroup.Prepend>
                       <Form.Control
                         className="form "
                         type="phone"
-                        placeholder ="Ponsel" style = {{textAlign:"center"}}
+                        placeholder="Ponsel"
+                        style={{ textAlign: "center" }}
                       />
                     </Col>
                   </Form.Group>
@@ -156,7 +166,7 @@ class Dashboard extends Component {
                 <Form>
                   <Form.Group as={Row} controlId="Name">
                     <Form.Label className="formlabel" column sm="2">
-                    Alamat
+                      Alamat
                     </Form.Label>
                     <Col sm="10">
                       <Form.Control
@@ -170,7 +180,7 @@ class Dashboard extends Component {
                 <Form>
                   <Form.Group as={Row} controlId="Name">
                     <Form.Label className="formlabel" column sm="2">
-                     Provinsi
+                      Provinsi
                     </Form.Label>
                     <Col sm="10">
                       <Form.Control
@@ -184,7 +194,7 @@ class Dashboard extends Component {
                 <Form>
                   <Form.Group as={Row} controlId="Name">
                     <Form.Label className="formlabel" column sm="2">
-                     Kota
+                      Kota
                     </Form.Label>
                     <Col sm="10">
                       <Form.Control
@@ -209,23 +219,7 @@ class Dashboard extends Component {
                     </Col>
                   </Form.Group>
                 </Form>
-                {/* <Form.Group as={Col} md="4" controlId="validationCustomUsername">
-          <Form.Label>Username</Form.Label>
-          <InputGroup>
-            <InputGroup.Prepend>
-              <InputGroup.Text id="inputGroupPrepend">@</InputGroup.Text>
-            </InputGroup.Prepend>
-            <Form.Control
-              type="text"
-              placeholder="Username"
-              aria-describedby="inputGroupPrepend"
-              required
-            />
-            <Form.Control.Feedback type="invalid">
-              Please choose a username.
-            </Form.Control.Feedback>
-          </InputGroup>
-        </Form.Group> */}
+                <Button style = {{marginLeft : "435px"}} variant="primary">Simpan</Button>
               </p>
             </Col>
             <Col></Col>
