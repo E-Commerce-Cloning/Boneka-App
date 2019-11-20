@@ -43,7 +43,7 @@ class Login extends Component {
 
   toggleShow() {
     this.setState({ hidden: !this.state.hidden });
-    this.setState({color:"red" } )
+    this.setState({color:"red" } ) 
   }
 
   componentDidMount() {
