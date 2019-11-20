@@ -1,0 +1,29 @@
+
+.con-bs {
+    width: 1174px;
+    margin-left: 70px;
+    background-color: white;
+}
+    
+.imagebusiness img {
+   
+    width: 250px !important;
+    /* margin-right: 10000px; */
+}
+.imagebusiness { 
+    margin-right: 50px !important;
+}
+
+h3, h3 {
+    margin-top: 10px; 
+    font-size: 1.20rem; 
+    font-weight: 500;
+}
+hr{
+    width: 1088px !important;
+    position: relative;
+    right: 126px !important;
+    left: -27px !important;
+}
+
+

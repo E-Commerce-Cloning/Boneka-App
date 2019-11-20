@@ -1,0 +1,15 @@
+.container-printer {
+    width: 99%;
+    padding-right: 16px;
+    padding-left: 15px;
+    margin-right: 100px;
+    margin-left: 10px;
+}
+ 
+ .image-printer img {
+    vertical-align: middle;
+    border-style: none;
+    width: 1108px;
+    margin-left: 39px;
+    margin-top: 40px;
+ }
