@@ -35,7 +35,7 @@
  
  
  .Submit1{
-     width: 320px;
+     width: 300px !important;
  }
  .container1{
      top: 550px ;
@@ -59,4 +59,6 @@
    place-content: 20px;
 stroke-width: 20px !important;
    content: inherit;
+   background: "white";
+align-content: "center"
  }

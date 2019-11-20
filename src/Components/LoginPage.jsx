@@ -11,7 +11,7 @@ import {
   Navbar
 } from "react-bootstrap";
 import "./LoginPage.css";
-import account from "../assets/acc.png";
+import account from "../assets/img/acc.png";
 import {Link} from "react-router-dom";
 
 class Login extends Component {
@@ -56,12 +56,12 @@ class Login extends Component {
     return (
       <div>
         <Navbar className="navbar">
-          <a href="#">
+          <a href="#!">
             <img
               clasName="logo1 "
               style={{ width: "34px", marginLeft: "80px" }}
               src="logo.png"
-              alt="my image"
+              alt="my logo"
               onClick={() => alert("Hello")}
             />
           </a>
@@ -75,7 +75,7 @@ class Login extends Component {
               <Card className="Card">
                 <Card.Header className="footerCard">
                   <div className="pic">
-                    <img className="picture" src={account} />
+                    <img className="picture" src={account} alt = "acc" />
                   </div>
                 </Card.Header>
                 <Card.Body className="bodycard" style={{ color: "grey" }}>

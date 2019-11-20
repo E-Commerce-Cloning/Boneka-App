@@ -10,7 +10,7 @@ import {
   Navbar
 } from "react-bootstrap";
 import "./LoginPage.css";
-import account from "../assets/acc.png";
+import account from "../assets/img/acc.png";
 import "./Register.css";
 import "react-datepicker/dist/react-datepicker.css";
 // import moment from 'moment';
@@ -124,8 +124,8 @@ class Register extends Component {
                       <Form.Label>Nama Depan</Form.Label>
                       <Form.Control
                         className="control"
-                        style={{ background: "white" }}
-                        type="depan"
+                    
+                        type="form"
                         placeholder="Masukkan Nama Depan"
                       />
                       <Form.Text className="text-muted"></Form.Text>
@@ -134,8 +134,8 @@ class Register extends Component {
                       <Form.Label>Nama Belakang</Form.Label>
                       <Form.Control
                         className="control"
-                        style={{ background: "white" }}
-                        type="belakang"
+                       
+                        type="form"
                         placeholder="Masukkan Nama Belakang"
                       />
 
@@ -159,55 +159,23 @@ class Register extends Component {
                       <Form.Label>Tanggal Lahir </Form.Label>
                       <Form.Control
                         className="control"
-                        style={{ background: "white" }}
+                        
                         placeholder="Tanggal lahir"
                         type="date"
                       />
                       <Form.Text className="text-muted"></Form.Text>
                     </Form.Group>
-                    {/* <Form.Group controlId="validationCustomUsername">
-                      <Form.Label>Username</Form.Label>
-                      <InputGroup>
-                        <InputGroup.Prepend>
-                          <InputGroup.Text
-                            id="inputGroupPrepend"
-                            style={{
-                              height: "42px",
-                              fontSize: "16px",
-                              textAlignment: "center"
-                            }}
-                          >
-                            +62
-                          </InputGroup.Text>
-                          <Form.Control
-                            controlId="user"
-                            type="text"
-                            style={{ background: "white", height: "40px" }}
-                            placeholder="Nomor Telepon"
-                            aria-describedby="inputGroupPrepend"
-                            required
-                          />
-                        </InputGroup.Prepend>
-
-                        <Form.Control.Feedback type="phone"></Form.Control.Feedback>
-                      </InputGroup>
-                    </Form.Group> */}
-                    <PhoneInput
-                      style={{
-                        background: "white",
-                        height: "",
-                        alignContent: "center"
-                      }}
-                      placeholder="Masukkan Nomor"
-                      value={this.state.value}
+                   
+                    <PhoneInput className= "phoneinput"
+                     type = "form"
                       onChange={value => this.setState({ value })}
                     />
                     <Form.Group controlId="formBasic">
                       <Form.Label>Email</Form.Label>
                       <Form.Control
                         className="control"
-                        style={{ background: "white" }}
-                        type="email"
+                       
+                        type="form"
                         placeholder="Masukkan  Email"
                       />
                       <Form.Text className="text-muted"></Form.Text>
