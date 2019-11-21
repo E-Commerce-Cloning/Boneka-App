@@ -1,0 +1,49 @@
+.row-icon {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -6px;
+    margin-left: 10px;
+    
+}
+
+.container category-icon {
+    max-width: 1140px;
+    margin-left: 71px;
+    
+}
+
+.menu-category-icon{
+    margin-right: 25px;
+    
+}
+
+a{
+    text-decoration: none !important;
+}
+
+.menu-category-icon img {
+    margin: 0px 0px 8px;
+    width: 204px !important;
+    padding-left: 0px;
+    padding-right: 150px;
+    margin-right: 10px;
+    vertical-align: middle;
+    
+}
+.a, h5 {
+    color: black;
+    font-size: 1.25 rem !important;
+}
+/* .h5, h5{
+    font-size: 0,5 rem !important;
+    text-align: center !important;
+    font-weight: 350;
+} */
+.brand, h5 {
+    font-weight: 350;
+    font-size: 0,5 rem !important;
+    text-align: center !important;
+    font-weight: 350;
+}
+
