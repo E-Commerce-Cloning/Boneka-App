@@ -1,0 +1,62 @@
+
+.picture1{
+    margin-left: 5px !important;
+    margin-top: 5px;
+    width: 90px;
+}
+.container{
+   margin-top: 40px; 
+}
+.footerCard1{
+    height: 120px !important;
+}
+/* .Cardprofile{
+    margin-left: -40px !important;
+} */
+
+
+.logout{
+    color: blue;
+}
+.information{
+    font-size: 25px !important;
+}
+
+.wajib{
+    font-size: 14px !important;
+    color: grey;
+}
+.line1{
+    width: 700px !important;
+    border: 1px solid grey;
+   }
+   .form {
+       width : 400px !important;
+       
+background: whitesmoke;
+
+   }
+   .formlabel{
+       text-align: center;
+       align-content: center;
+      
+       
+       font-size: 13px !important;
+   }
+   .toggle{
+       width: 400px;
+     
+       background-color : white !important; /* Green */
+  border: none;
+  color: white !important;
+  height: 35px;
+  
+   }
+.address{
+    font-size: 13px !important;
+   
+
+}
+.simpan{
+    right :20px  !important ;
+}

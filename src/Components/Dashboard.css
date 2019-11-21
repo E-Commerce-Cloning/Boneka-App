@@ -1,0 +1,40 @@
+.picture1{
+    margin-left: 5px !important;
+    margin-top: 5px;
+    width: 90px;
+}
+.footerCard1{
+    height: 120px !important;
+}
+.Carddash{
+    margin-left: -40px !important;
+}
+
+
+
+.logout{
+    color: blue;
+}
+.btn{
+    
+    
+ 
+    border: none;
+    cursor:pointer;
+    overflow: hidden;    
+
+}
+.line{
+    width: 530px !important
+}
+.list-group-item{
+    width: 358px;;
+    height: 43px;
+}
+.wajib{
+    font-size: 8px !important;
+    color: grey;
+}
+.line{
+ width: 530px !important
+}
