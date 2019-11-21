@@ -1,6 +1,8 @@
 .navbar {
   background-color: #092c52;
   height: 91px;
+  position: fixed;
+  z-index: 10;
 }
 
 .img {
@@ -21,11 +23,6 @@
   margin-left: 30px;
   width: 532px;
   margin-bottom: 15px;
-}
-
-.nav2 {
-  background-color: #092c52;
-  height: 30px;
 }
 
 .garis {

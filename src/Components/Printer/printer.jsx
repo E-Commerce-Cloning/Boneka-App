@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Card, Row, Col } from "react-bootstrap";
 import ItemsCarousel from "react-items-carousel";
-import imgMaintenance from "../../assets/img/maintenance.jpg";
+import imgPrinter from "../../Assets/img/printer.jpg";
 
-const Maintenance = () => {
+const Printer = () => {
   const [activeItemIndex, setActiveItemIndex] = useState(0);
   const chevronWidth = 40;
   return (
@@ -22,8 +22,8 @@ const Maintenance = () => {
         <Row>
           <Col sm={4}>
             <img
-              style={{ width: "250px", height: "230px" }}
-              src={imgMaintenance}
+              style={{ width: "250px", height: "230px", marginLeft: "-30px" }}
+              src={imgPrinter}
               alt=""
             />
           </Col>
@@ -159,4 +159,4 @@ const Maintenance = () => {
   );
 };
 
-export default Maintenance;
+export default Printer;

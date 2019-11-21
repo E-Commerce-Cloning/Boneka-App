@@ -1,10 +1,10 @@
 import React from "react";
-import { Navbar, Nav, Button, FormControl } from "react-bootstrap";
+import { Navbar, Nav, Button, FormControl, Dropdown } from "react-bootstrap";
 import "./Navbar.css";
-import logo from "../../assets/img/Boneka.png";
-import iconMenu from "../../assets/img/menu-button.svg";
-import searchButton from "../../assets/img/search2.svg";
-import shoppingCart from "../../assets/img/shopping-cart.svg";
+import logo from "../../Assets/img/Boneka.png";
+import iconMenu from "../../Assets/img/menu-button.svg";
+import searchButton from "../../Assets/img/search2.svg";
+import shoppingCart from "../../Assets/img/shopping-cart.svg";
 
 const NavDB = () => {
   return (
@@ -65,10 +65,13 @@ const NavDB = () => {
             src={shoppingCart}
             alt=""
           />
+          <span className="badge">
+            <b style={{ marginLeft: "-3px" }}>0</b>
+          </span>
           <p style={{ fontSize: "12px", paddingTop: "10px" }}>Keranjang</p>
         </Button>
 
-        <Nav.Link
+        <Dropdown
           href="#"
           style={{
             marginLeft: "6px",
@@ -78,62 +81,23 @@ const NavDB = () => {
             color: "white"
           }}
         >
-          <p style={{ marginTop: "25px", fontSize: "15px" }}>LOGIN</p>
-        </Nav.Link>
-        <Button
-          style={{ marginLeft: "12px", marginBottom: "8px" }}
-          variant="warning"
-        >
-          DAFTAR
-        </Button>
+          <Dropdown.Toggle
+            className="dropdown"
+            style={{ marginTop: "10px", fontSize: "15px" }}
+          >
+            Halo,
+            <br />
+            Hasnawi
+          </Dropdown.Toggle>
+          <Dropdown.Menu>
+            <Dropdown.Item href="#/action-1">Akun Saya</Dropdown.Item>
+            <Dropdown.Item href="#/action-2">Riwayat Transaksi</Dropdown.Item>
+            <Dropdown.Item href="#/action-3">Keluar</Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown>
       </Navbar>
+      <div style={{ height: "91px" }}></div>
       <div className="garis"></div>
-      <Navbar className="nav2">
-        <Nav.Link
-          href="#"
-          style={{
-            textDecoration: "none",
-            color: "white",
-            marginLeft: "65px",
-            fontSize: "13px"
-          }}
-        >
-          Cicilan Tanpa Kartu Kredit
-        </Nav.Link>
-        <Nav.Link
-          href="#"
-          style={{
-            textDecoration: "none",
-            color: "white",
-            paddingLeft: "24px",
-            fontSize: "13px"
-          }}
-        >
-          Sahabat Mahasiswa
-        </Nav.Link>
-        <Nav.Link
-          href="#"
-          style={{
-            textDecoration: "none",
-            color: "white",
-            paddingLeft: "24px",
-            fontSize: "13px"
-          }}
-        >
-          KJP-KJMU
-        </Nav.Link>
-        <Nav.Link
-          href="#"
-          style={{
-            textDecoration: "none",
-            color: "white",
-            paddingLeft: "24px",
-            fontSize: "13px"
-          }}
-        >
-          Digital Product
-        </Nav.Link>
-      </Navbar>
     </>
   );
 };

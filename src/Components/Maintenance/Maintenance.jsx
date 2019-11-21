@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import { Card, Row, Col } from "react-bootstrap";
 import ItemsCarousel from "react-items-carousel";
-import imgPrinter from "../../assets/img/printer.jpg";
+import imgMaintenance from "../../Assets/img/maintenance.jpg";
 
-const Printer = () => {
+const Maintenance = () => {
   const [activeItemIndex, setActiveItemIndex] = useState(0);
   const chevronWidth = 40;
   return (
     <div style={{ marginTop: "100px" }} className="container">
       <h4 style={{ fontFamily: "Noto Sans", font: "bold", marginLeft: "10px" }}>
-        Printer dan Peralatan Kantor
+        Maintenance, Repair, Operating
       </h4>
       <hr />
       <div
@@ -22,8 +22,8 @@ const Printer = () => {
         <Row>
           <Col sm={4}>
             <img
-              style={{ width: "250px", height: "230px" }}
-              src={imgPrinter}
+              style={{ width: "250px", height: "230px", marginLeft: "-30px" }}
+              src={imgMaintenance}
               alt=""
             />
           </Col>
@@ -159,4 +159,4 @@ const Printer = () => {
   );
 };
 
-export default Printer;
+export default Maintenance;
