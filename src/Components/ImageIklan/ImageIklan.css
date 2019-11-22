@@ -1,14 +1,7 @@
-.row-image {
-    margin-right: -33px;
-    margin-left: 40px;
-}
-
-
 .image-iklan img {
-    margin: 16px -77px 8px !important;
-    width: 506px !important;
-    padding-left: 22px !important;
-    padding-right: 140px !important;
-    margin-right: 14px !important;
-    vertical-align: middle;
+  margin: 16px -77px 8px !important;
+  width: 380px !important;
+  padding-right: 20px !important;
+  margin-right: 14px !important;
+  vertical-align: middle;
 }

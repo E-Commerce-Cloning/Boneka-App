@@ -1,0 +1,46 @@
+.navbar {
+  background-color: #092c52;
+  height: 91px;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+}
+
+.img {
+  height: 53px;
+  width: 200px;
+  padding-left: 15px;
+  margin-bottom: 7px;
+}
+
+.btnkategori {
+  background: #092c52;
+  margin-left: 30px;
+  margin-bottom: 12px;
+  border: none;
+  font-size: 16px;
+}
+.search {
+  margin-left: 30px;
+  width: 532px;
+  margin-bottom: 15px;
+}
+
+.garis {
+  border-bottom: 1px solid #1f1e1e;
+}
+.badge {
+  position: absolute;
+  top: -10px;
+  right: 2px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  background: yellow;
+  color: black;
+  width: 5px;
+  height: 20px;
+}
+.dropdown {
+  background: #092c52;
+  border: none;
+}

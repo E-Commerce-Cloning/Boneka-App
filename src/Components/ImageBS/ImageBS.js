@@ -5,14 +5,21 @@ import "./ImageBS.css";
 const ImageBS = () => {
   return (
     <div className="con-bs">
-        <div className="col col-md-12">
-          <div className="title">
-            <h3>Business Solution</h3>
-            <hr/>
-          </div>
+      <div className="col col-md-12">
+        <div className="title">
+          <h3>Business Solution</h3>
+          <hr />
         </div>
-        <div className="imagebusiness">
-        <div className="col col-md-3">
+      </div>
+      <div className="imagebusiness">
+        <div
+          style={{
+            display: "inline-flex",
+            maxWidth: "21%",
+            marginLeft: "-10px"
+          }}
+          className="col col-md-3"
+        >
           <a
             href="https://www.bhinneka.com/promo/business-solution?utm_source=direct&amp;utm_medium=homepage&amp;utm_campaign=191115_f_monitoring-business-as-easy-as-using-whatsapp&amp;utm_content=contentsegment_4_1"
             target="_self"
@@ -23,7 +30,10 @@ const ImageBS = () => {
             ></img>
           </a>
         </div>
-        <div className="col col-md-3 ">
+        <div
+          style={{ display: "inline-flex", maxWidth: "21%" }}
+          className="col col-md-3 "
+        >
           <a
             href="https://www.bhinneka.com/promo/pc-performance?utm_source=direct&amp;utm_medium=homepage&amp;utm_campaign=191115_n_must-have-film-maker-pc&amp;utm_content=contentsegment_4_2"
             target="_self"
@@ -34,7 +44,10 @@ const ImageBS = () => {
             ></img>
           </a>
         </div>
-        <div className="col col-md-3 ">
+        <div
+          style={{ display: "inline-flex", maxWidth: "21%" }}
+          className="col col-md-3 "
+        >
           <a
             href="https://www.bhinneka.com/promo/digital-printing?utm_source=direct&amp;utm_medium=homepage&amp;utm_campaign=191115_n_digital-printing-solution&amp;utm_content=contentsegment_4_3"
             target="_self"
@@ -45,22 +58,23 @@ const ImageBS = () => {
             ></img>
           </a>
         </div>
-        
-          <div className="col col-md-3 ">
-            <a
-              href="https://www.bhinneka.com/promo/service-center?utm_source=direct&amp;utm_medium=homepage&amp;utm_campaign=191115_n_bhinneka-service-center&amp;utm_content=contentsegment_4_4"
-              target="_self"
-            >
-              <img
-                src="https://static.bmdstatic.com/st/home/8634c9-product-360x360-px.jpg"
-                alt="Gaming Corner"
-              ></img>
-            </a>
-             
-        </div>
+
+        <div
+          style={{ display: "inline-flex", maxWidth: "21%" }}
+          className="col col-md-3 "
+        >
+          <a
+            href="https://www.bhinneka.com/promo/service-center?utm_source=direct&amp;utm_medium=homepage&amp;utm_campaign=191115_n_bhinneka-service-center&amp;utm_content=contentsegment_4_4"
+            target="_self"
+          >
+            <img
+              src="https://static.bmdstatic.com/st/home/8634c9-product-360x360-px.jpg"
+              alt="Gaming Corner"
+            ></img>
+          </a>
         </div>
       </div>
-
+    </div>
   );
 };
 

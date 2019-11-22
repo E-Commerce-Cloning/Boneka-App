@@ -1,13 +1,12 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./Footer.css"
-import logo from '../Assets/boneka footer.png'
+import "./Footer.css";
+import logo from "../../Assets/img/boneka footer.png";
 
 const Footer = () => {
   return (
     <div className="background">
       <div className="row row-1">
-
         <div className="col-md-3 footer-menu footer-icon">
           <div className="footer-apps">
             <h6 className="hidden-xs hidden-sm">
@@ -39,7 +38,7 @@ const Footer = () => {
               </li>
               <li>
                 <a href="https://twitter.com/bhinneka" target="_blank">
-                <i className="fa fa-twitter"></i>
+                  <i className="fa fa-twitter"></i>
                 </a>
               </li>
               <li>
@@ -47,17 +46,17 @@ const Footer = () => {
                   href="https://www.instagram.com/bhinnekacom/"
                   target="_blank"
                 >
-                 <i className="fa fa-instagram"></i>
+                  <i className="fa fa-instagram"></i>
                 </a>
               </li>
               <li>
                 <a href="https://www.youtube.com/bhinnekacom/" target="_blank">
-                <i className="fa fa-youtube"></i>
+                  <i className="fa fa-youtube"></i>
                 </a>
               </li>
               <li>
                 <a href="https://blog.bhinneka.com/" target="_blank">
-                <i className="fa fa-wordpress"></i>
+                  <i className="fa fa-wordpress"></i>
                 </a>
               </li>
               <li>
@@ -130,14 +129,46 @@ const Footer = () => {
             <h6>CONTACT CENTER</h6>
             <ul className="list-unstyled">
               <li>
-                <a href="https://api.whatsapp.com/send?phone=628121238000"
-                target="_blank"><span><i className="fa fa-phone"> (021) 2929-2828</i></span></a>
+                <a
+                  href="https://api.whatsapp.com/send?phone=628121238000"
+                  target="_blank"
+                >
+                  <span>
+                    <i
+                      style={{
+                        position: "relative",
+                        top: "-6px",
+                        left: "10px",
+                        size: "12px"
+                      }}
+                      className="fa fa-phone"
+                    >
+                      {" "}
+                      (021) 2929-2828
+                    </i>
+                  </span>
+                </a>
               </li>
               <li>
-              <a
-                href="https://api.whatsapp.com/send?phone=628121238000"
-                target="_blank"
-              ><span><i className="fa fa-whatsapp"> 0812-123-8000</i></span></a>
+                <a
+                  href="https://api.whatsapp.com/send?phone=628121238000"
+                  target="_blank"
+                >
+                  <span>
+                    <i
+                      style={{
+                        position: "relative",
+                        top: "-6px",
+                        left: "10px",
+                        size: "12px"
+                      }}
+                      className="fa fa-whatsapp"
+                    >
+                      {" "}
+                      0812-123-8000
+                    </i>
+                  </span>
+                </a>
               </li>
             </ul>
           </div>
@@ -153,20 +184,18 @@ const Footer = () => {
         </div>
       </div>
       <div className="row-credit">
-          <div className="row row-1">
-            <div className="col-sm-12">
-              <div className="credit-image">
-                <img src={logo}></img>
-                <br></br>
-                <br></br>
-                <small>© 2019 PT. Boneka</small>
-              </div>
+        <div className="row row-1">
+          <div className="col-sm-12">
+            <div className="credit-image">
+              <img src={logo}></img>
+              <br></br>
+              <br></br>
+              <small>© 2019 PT. Boneka</small>
             </div>
           </div>
         </div>
       </div>
-  
-  
+    </div>
   );
 };
 
