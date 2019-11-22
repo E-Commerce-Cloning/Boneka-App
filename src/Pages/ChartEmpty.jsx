@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
-import Navbar from "../components/NavbarAfterLogin/Navbar";
-import Chart from "../components/cart/cartEmpty/cartEmpty";
+import Navbar from "../Components/NavbarAfterLogin/Navbar";
+import Chart from "../Components/cart/cartEmpty/cartEmpty";
 
 const ChartEmpty = () => {
   return (

@@ -1,18 +1,10 @@
 import React, { Component } from "react";
 import { FacebookLoginButton } from "react-social-login-buttons";
 import { GoogleLoginButton } from "react-social-login-buttons";
-import {
-  Button,
-  Card,
-  Form,
-  Col,
-  Row,
-  Container,
-  Navbar
-} from "react-bootstrap";
+import { Button, Card, Form, Col, Row, Container } from "react-bootstrap";
 import "./LoginPage.css";
-import account from "../assets/img/acc.png";
-import {Link} from "react-router-dom";
+import account from "../../Assets/img/acc.png";
+import { Link } from "react-router-dom";
 
 class Login extends Component {
   constructor(props) {
@@ -21,14 +13,12 @@ class Login extends Component {
     this.state = {
       hidden: true,
       password: "",
-      color:''
-      
+      color: ""
     };
 
     this.handlePasswordChange = this.handlePasswordChange.bind(this);
     this.toggleShow = this.toggleShow.bind(this);
     // this.colorChange=this.colorChange.bind(this)
-    
   }
   // colorChange=()=>{
   //   this.setState({background: 'green'})
@@ -43,39 +33,41 @@ class Login extends Component {
 
   toggleShow() {
     this.setState({ hidden: !this.state.hidden });
-    this.setState({color:"red" } ) 
+    if (this.state.hidden) {
+      this.setState({ color: "red" });
+    } else {
+      this.setState({ color: "black" });
+    }
   }
 
   componentDidMount() {
     if (this.props.password) {
       this.setState({ password: this.props.password });
     }
-    
   }
   render() {
     return (
       <div>
-        <Navbar className="navbar">
-          <a href="#!">
+        <div className="navlog">
+          <a href="/">
             <img
-              clasName="logo1 "
-              style={{ width: "34px", marginLeft: "80px" }}
+              clasName="logo1"
+              style={{ width: "34px", marginLeft: "80px", marginTop: "27px" }}
               src="logo.png"
               alt="my logo"
-              onClick={() => alert("Hello")}
             />
           </a>
-        </Navbar>
+        </div>
 
         <h1 className="sign"> Sign In </h1>
-        <Container className="container">
+        <Container>
           <Row>
             <Col></Col>
             <Col xs={5}>
               <Card className="Card">
                 <Card.Header className="footerCard">
                   <div className="pic">
-                    <img className="picture" src={account} alt = "acc" />
+                    <img className="picture" src={account} alt="acc" />
                   </div>
                 </Card.Header>
                 <Card.Body className="bodycard" style={{ color: "grey" }}>
@@ -101,11 +93,12 @@ class Login extends Component {
                       />
                       <icon
                         className="fa fa-eye "
-                        style={{ marginBottom: "-100px" , color :this.state.color}}
-                        onClick={this.toggleShow} 
+                        style={{
+                          marginBottom: "-100px",
+                          color: this.state.color
+                        }}
+                        onClick={this.toggleShow}
                         onChange={this.colorChange}
-                        
-                        
                       />
                       <div>
                         {/* <button onClick={this.toggleShow}>Show / Hide</button> */}
@@ -114,7 +107,12 @@ class Login extends Component {
 
                       {/* label="Check me out" */}
                     </Form.Group>
-                    <Button className="Submit" variant="primary" type="submit">
+                    <Button
+                      href="/dashboard"
+                      className="Submit"
+                      variant="primary"
+                      type="submit"
+                    >
                       Sign In
                     </Button>
                     <p className="or " style={{ marginLeft: "100px" }} />
@@ -136,10 +134,10 @@ class Login extends Component {
               </Card>
               <p className="account">
                 Belum punya account Boneka ?
-                <Link to ={'/Register'}>
-                <a className="daftar" href="url">
-                  Daftar
-                </a>
+                <Link to={"/Register"}>
+                  <a className="daftar" href="url">
+                    Daftar
+                  </a>
                 </Link>
               </p>
             </Col>

@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, ListGroup } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import account1 from "../assets/img/acc.png";
+import account1 from "../Assets/img/acc.png";
 import "./Menu.css";
 
 const Menu = () => {
@@ -13,7 +13,7 @@ const Menu = () => {
             <img className="picture1" src={account1} alt="account1" />
             <p>Nama Account </p>
             <p class="list-group-item-text">
-              Bukan akun Anda?{" "}
+              Bukan akun Anda?
               <a className="logout" href="/logout">
                 Keluar
               </a>

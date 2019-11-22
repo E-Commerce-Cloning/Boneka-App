@@ -9,8 +9,7 @@ import {
   Container,
   Navbar
 } from "react-bootstrap";
-import "./LoginPage.css";
-import account from "../assets/img/acc.png";
+import account from "../../Assets/img/acc.png";
 import "./Register.css";
 import "react-datepicker/dist/react-datepicker.css";
 // import moment from 'moment';
@@ -27,8 +26,8 @@ class Register extends Component {
       hidden: true,
       hidden1: true,
       password: "",
-      color:'',
-      colorc: '',
+      color: "",
+      colorc: "",
       confpassword: "",
       startDate: new Date()
     };
@@ -61,12 +60,12 @@ class Register extends Component {
   }
   toggleShow1() {
     this.setState({ hidden1: !this.state.hidden1 });
-    this.setState({colorc:"red"})
+    this.setState({ colorc: "red" });
   }
 
   toggleShow() {
     this.setState({ hidden: !this.state.hidden });
-    this.setState({color:"red"})
+    this.setState({ color: "red" });
   }
 
   componentDidMount() {
@@ -81,23 +80,22 @@ class Register extends Component {
   render() {
     return (
       <div>
-        <Navbar className="navbar1">
-          <a href="#!">
+        <div className="navlog">
+          <a href="/">
             <img
-              clasName="logo1 btn"
-              style={{ width: "34px", marginLeft: "80px" }}
+              clasName="logo1"
+              style={{ width: "34px", marginLeft: "80px", marginTop: "27px" }}
               src="logo.png"
               alt="my logo"
-              onClick={() => alert("Hello")}
             />
           </a>
-        </Navbar>
+        </div>
 
         <h1 className="sign1"> Registrasi Akun </h1>
         <Container className="container1">
           <p className="account2">
             Sudah Memiliki Akun Boneka ?
-            <Link to={"/"}>
+            <Link to={"/login"}>
               <a className="daftar2" href="url">
                 Sign In
               </a>
@@ -193,7 +191,10 @@ class Register extends Component {
                       />
                       <icon
                         className="fa fa-eye "
-                        style={{ marginBottom: "-100px" , color :this.state.color}}
+                        style={{
+                          marginBottom: "-100px",
+                          color: this.state.color
+                        }}
                         onClick={this.toggleShow}
                       />
                       <p className="min">minimum 6 karakter alfanumerik</p>
@@ -217,7 +218,10 @@ class Register extends Component {
                       />
                       <icon
                         className="fa fa-eye "
-                        style={{ marginBottom: "-100px",color :this.state.colorc }}
+                        style={{
+                          marginBottom: "-100px",
+                          color: this.state.colorc
+                        }}
                         onClick={this.toggleShow1}
                       />
                     </Form.Group>

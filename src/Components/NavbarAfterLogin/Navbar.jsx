@@ -13,7 +13,7 @@ const NavDB = () => {
         {/* button kategori */}
         <Button className="btnkategori">
           <img
-            width="20"
+            width="15"
             height="18"
             style={{ marginBottom: "5px" }}
             src={iconMenu}
@@ -21,7 +21,7 @@ const NavDB = () => {
           />
           &nbsp; KATEGORI
         </Button>
-        <Nav.Link href="#">
+        <Nav.Link href="/">
           <img className="img" src={logo} alt="" />
         </Nav.Link>
         {/* search */}
@@ -47,7 +47,7 @@ const NavDB = () => {
         </Button>
         {/* button keranjang */}
         <Button
-          href="#"
+          href="/chartempty"
           style={{
             marginLeft: "25px",
             height: "91px",
@@ -90,9 +90,9 @@ const NavDB = () => {
             Hasnawi
           </Dropdown.Toggle>
           <Dropdown.Menu>
-            <Dropdown.Item href="#/action-1">Akun Saya</Dropdown.Item>
+            <Dropdown.Item href="/profil">Akun Saya</Dropdown.Item>
             <Dropdown.Item href="#/action-2">Riwayat Transaksi</Dropdown.Item>
-            <Dropdown.Item href="#/action-3">Keluar</Dropdown.Item>
+            <Dropdown.Item href="/">Keluar</Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
       </Navbar>

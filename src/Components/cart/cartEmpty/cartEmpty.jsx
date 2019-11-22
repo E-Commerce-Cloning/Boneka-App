@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, Button } from "react-bootstrap";
 import "./cartEmpty.css";
-import imgEmty from "../../../assets/img/empty.svg";
+import imgEmty from "../../../Assets/img/empty.svg";
 
 const CartEmpty = () => {
   return (
@@ -29,7 +29,7 @@ const CartEmpty = () => {
             <h4>Keranjang Kosong</h4>
             <h6>Silahkan cari produk di Boneka</h6>
             <br />
-            <Button>KEMBALI BERBELANJA</Button>
+            <Button href="/dashboard">KEMBALI BERBELANJA</Button>
           </div>
         </Card.Body>
       </Card>

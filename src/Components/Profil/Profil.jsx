@@ -10,13 +10,11 @@ import {
 } from "react-bootstrap";
 import "./Profil.css";
 import ToggleButtonGroup from "react-bootstrap/ToggleButtonGroup";
-import NavDB from "./Navbar";
-import Menu from "./Menu";
+import NavDB from "../NavbarAfterLogin/Navbar";
+import Menu from "../Menu";
 
 class Dashboard extends Component {
-  componentDidMount() {
-    
-  }
+  componentDidMount() {}
   render() {
     return (
       <div>
@@ -219,7 +217,9 @@ class Dashboard extends Component {
                     </Col>
                   </Form.Group>
                 </Form>
-                <Button style = {{marginLeft : "435px"}} variant="primary">Simpan</Button>
+                <Button style={{ marginLeft: "435px" }} variant="primary">
+                  Simpan
+                </Button>
               </p>
             </Col>
             <Col></Col>
